@@ -48,6 +48,7 @@ install:
   - travis_retry composer install --no-interaction
 
 script:
+  - composer license-check
   - if [[ $TEST_COVERAGE == 'true' ]]; then composer test-coverage ; fi
   - if [[ $TEST_COVERAGE != 'true' ]]; then composer test ; fi
   - if [[ $CS_CHECK == 'true' ]]; then composer cs-check ; fi
