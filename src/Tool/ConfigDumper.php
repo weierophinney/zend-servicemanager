@@ -9,7 +9,6 @@ namespace Zend\ServiceManager\Tool;
 
 use ReflectionClass;
 use ReflectionParameter;
-use Traversable;
 use Zend\ServiceManager\AbstractFactory\ConfigAbstractFactory;
 use Zend\ServiceManager\Exception\InvalidArgumentException;
 
